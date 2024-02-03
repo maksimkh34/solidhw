@@ -75,7 +75,7 @@ public class Logger {
             if(this.thisLoggerType == LoggerType.File) return;
         }
 
-        System.out.println(color + outputString);
+        System.out.println(color + outputString + "\u001B[0m");
     }
 
     public void exitLogger() {
