@@ -7,10 +7,12 @@ public class Main {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));
-        Logger logger = new Logger(Logger.LoggerType.FileAndConsole);
-        String help = "Ожидается выражение: \n" +
-                "(-)a(+\\-)bi (-\\+\\/\\*) (-)c(+\\-)di, \n" +
-                "где a, b, c, d - коэффициенты (могут быть нулевыми)\n";
+        Logger logger = new Logger(Logger.LoggerType.Console);
+        String help = """
+                Ожидается выражение:\s
+                (-)a(+\\-)bi (-\\+\\/\\*) (-)c(+\\-)di,\s
+                где a, b, c, d - коэффициенты (могут быть нулевыми)
+                """;
 
         System.out.print("Введите выражение (формат: a+bi - c-di) или ? для справки: ");
         String expression;
